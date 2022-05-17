@@ -1,0 +1,26 @@
+.table {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+.headRow {
+  background-color: azure;
+}
+.headRow:nth-child(even) {
+  background-color: aqua;
+}
+.headRow + .headRow {
+  border-left: 1px solid black;
+}
+.tableData {
+  margin: 0;
+  padding-right: 10px;
+  border-spacing: 0;
+  padding-top: 15px;
+}
+.tableData + .tableData {
+  padding-left: 70px;
+  border-left: 1px solid black;
+}
