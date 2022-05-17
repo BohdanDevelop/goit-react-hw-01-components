@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Profile = ({image:dasBild, username, tag, location ,followers, views, likes}) => {
     return (
         <div className={style.card}>
-<img src={dasBild} alt="image" className={style["card__image"]}/>
+<img src={dasBild} alt="something" className={style["card__image"]}/>
 <h2 className={style["card__name"]}>{username}</h2>
 <p className={style["card__tag"]}>@{tag}</p>
 <p className={style["card__location"]}>{location}</p>
