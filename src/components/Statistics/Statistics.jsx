@@ -3,7 +3,7 @@ import style from './Statistics.module.scss';
 
 
 const Statistics = ({stats, title} )=>{
-const heading = title? <h2 className={style["upload__heading"]}>{title}</h2> : "";
+const heading = title && <h2 className={style["upload__heading"]}>{title}</h2>;
 
 const liItems = stats.map(({id,label,percentage}) => {
  return <li className={style["upload__li"]} key={id}>
