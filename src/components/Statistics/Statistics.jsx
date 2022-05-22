@@ -24,9 +24,9 @@ const liItems = stats.map(({id,label,percentage}) => {
 Statistics.propTypes = {
     title: PropTypes.string,
     stats: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.string,
-        label: PropTypes.string, 
-        percentage: PropTypes.number
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired, 
+        percentage: PropTypes.number.isRequired,
     }).isRequired)
 }
 export default Statistics;

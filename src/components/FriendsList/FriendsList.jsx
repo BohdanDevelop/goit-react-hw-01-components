@@ -13,9 +13,13 @@ const FriendsList = ({friends})=>{
         </li>
     })
     
-    return <ul className={style.ul}>
+    return (
+    <>
+    <h2>Friends List</h2>
+    <ul className={style.ul}>
 {liItems}
     </ul>
+    </>)
 }
 
 
