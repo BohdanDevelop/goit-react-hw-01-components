@@ -1,0 +1,22 @@
+%verifyOnline {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.status {
+  @extend %verifyOnline;
+}
+.status.online {
+  background-color: green;
+}
+.li {
+  padding: 10px 15px;
+  display: flex;
+  border: 1px solid black;
+}
+.li:not(:last-child) {
+  margin-bottom: 20px;
+}
